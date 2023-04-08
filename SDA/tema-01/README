@@ -1,0 +1,16 @@
+Legenda: 
+    l = MOVE_LEFT
+    L = MOVE_LEFT_CHAR
+    r = MOVE_RIGHT
+    R = MOVE_RIGHT_CHAR
+    w = WRITE
+    < = INSERT_LEFT
+    > = INSERT_RIGHT
+
+	Tema contine un cod sursa si doua headere care vor fi enumerate mai jos:
+
+	"MagicBandList.h" : Acest header contine structurile de banda magica si stiva pentru undo/redo si operatiile aferente pentru a opera aceste structuri. Structura de banda magica este o lista dublu inlatuita care are o santinela si un cursor, in timp ce stiva pentru undo si redo este doar o stiva simpla care retine pozitiile anterioare ale cursorului cand se executa o operatie de tip "move". Operatiile au rolul descris in cerinta temei, iar alte detalii despre ele au fost scrise in comentariile din header.
+
+	"Commands.h" : Acest header contine o structura de tip coada, si comenzile necesare pentru a opera structura. Coada va contine noduri care retin doua date de tip caracter: prima este "command", care are rolul de a retine tipul de comanda retinut (vezi legenda de mai sus); a doua este "value" care retine valoare caracterului dat ca input pentru comanda (in caz ca nu este necesara o valoare pentru comanda, am decis sa intializez acea valoare drept '0', insa continutul este irelevant pentru ca nu va fi luat in considerare oricum). Detaalii mai amanuntite despre rolul si implementarea comenzilor sunt scris in comentariile din header.
+
+	"tema1.c" : Acesta este codul sursa. La inceputul functiei main initializam toate structurile si deschidem fisierele de input si output. Dupa aceea citim prima oara cate comenzi se afla in fisierul de input. Apoi, citim pe rand din fisier toate comenzile si le executam folosind functiile din headere. la final dezalocam toata memoria si inchidem fisierele de input/output.
