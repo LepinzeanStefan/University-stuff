@@ -1,0 +1,21 @@
+c =
+
+Compressed Column Sparse (rows = 300, cols = 1, nnz = 1 [0.33%])
+
+  (7, 1) ->  0.33333
+
+c =
+
+Compressed Column Sparse (rows = 300, cols = 1, nnz = 2 [0.67%])
+
+  (7, 1) ->  0.33333
+  (11, 1) ->  0.33333
+
+c =
+
+Compressed Column Sparse (rows = 300, cols = 1, nnz = 3 [1%])
+
+  (7, 1) ->  0.33333
+  (11, 1) ->  0.33333
+  (286, 1) ->  0.33333
+

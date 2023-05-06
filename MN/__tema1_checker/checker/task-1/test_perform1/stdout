@@ -1,0 +1,13 @@
+c =
+
+Compressed Column Sparse (rows = 9, cols = 1, nnz = 1 [11%])
+
+  (1, 1) ->  0.50000
+
+c =
+
+Compressed Column Sparse (rows = 9, cols = 1, nnz = 2 [22%])
+
+  (1, 1) ->  0.50000
+  (7, 1) ->  0.33333
+

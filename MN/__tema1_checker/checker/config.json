@@ -1,0 +1,344 @@
+{
+    "test-groups": [
+        {
+            "name": "Task 1. Markov is coming...",
+            "folder": "task-1",
+            "expected-file": "./markov-is-coming/",
+            "tests": [
+                {
+                    "name": "test_parse1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_parse2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_parse3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_adj1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_adj2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_adj3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_link1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_link2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_link3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_Jacobi1",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_Jacobi2",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_Jacobi3",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_perform1",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-4
+                },
+                {
+                    "name": "test_perform2",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-4
+                },
+                {
+                    "name": "test_perform3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-4
+                },
+                {
+                    "name": "test_heuristic1",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_heuristic2",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_heuristic3",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_decode1",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_decode2",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_decode3",
+                    "test-score": 4,
+                    "test-type": "exact"
+                }
+            ]
+        },
+        {
+            "name": "Task 2. Linear Regression",
+            "folder": "task-2",
+            "expected-file": "./linear-regression/",
+            "tests": [
+                {
+                    "name": "get_data1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "get_data2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "get_data3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "get_data4",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "get_csv_data",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "prepare_data1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "prepare_data2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "prepare_data3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "prepare_data4",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "prepare_csv_data",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "cost_function1",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-4
+                },
+                {
+                    "name": "cost_function2",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-4
+                },
+                {
+                    "name": "cost_function3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-4
+                },
+                {
+                    "name": "gradient_data",
+                    "test-score": 5,
+                    "test-type": "approx",
+                    "max-error": 1e-9
+                },
+                {
+                    "name": "normal_eq_data1",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-7
+                },
+                {
+                    "name": "normal_eq_data2",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-7
+                },
+                {
+                    "name": "normal_eq_data3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-7
+                },
+                {
+                    "name": "normal_eq_data4",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-8
+                },
+                {
+                    "name": "normal_eq_data5",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-7
+                },
+                {
+                    "name": "lasso_function1",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-8
+                },
+                {
+                    "name": "lasso_function2",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-8
+                },
+                {
+                    "name": "lasso_function3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-8
+                },
+                {
+                    "name": "ridge_function1",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-8
+                },
+                {
+                    "name": "ridge_function2",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-8
+                },
+                {
+                    "name": "ridge_function3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-8
+                }
+            ]
+        },
+        {
+            "name": "Task 3. MNIST 101",
+            "folder": "task-3",
+            "expected-file": "./mnist-101",
+            "tests": [
+                {
+                    "name": "test_load1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "test_load2",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-10
+                },
+                {
+                    "name": "test_split1",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-10
+                },
+                {
+                    "name": "test_split2",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-10
+                },
+                {
+                    "name": "test_initialize1",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1.0
+                },
+                {
+                    "name": "test_initialize2",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 0.5
+                },
+                {
+                    "name": "test_initialize3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 0.26
+                },
+                {
+                    "name": "test_cost1",
+                    "test-score": 3,
+                    "test-type": "approx",
+                    "max-error": 1e-5
+                },
+                {
+                    "name": "test_cost2",
+                    "test-score": 3,
+                    "test-type": "approx",
+                    "max-error": 1e-5
+                },
+                {
+                    "name": "test_cost3",
+                    "test-score": 3,
+                    "test-type": "approx",
+                    "max-error": 1e-5
+                },
+                {
+                    "name": "test_predict1",
+                    "test-score": 10,
+                    "test-type": "approx",
+                    "max-error": 0.3
+                },
+                {
+                    "name": "test_predict2",
+                    "test-score": 10,
+                    "test-type": "approx",
+                    "max-error": 0.3
+                }
+            ]
+        }
+    ]
+}
