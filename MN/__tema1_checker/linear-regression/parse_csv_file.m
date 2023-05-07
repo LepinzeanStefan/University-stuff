@@ -26,4 +26,5 @@ function [Y, InitialMatrix] = parse_csv_file(file_path)
     endfor
     iter++;
   endwhile
+  Y = Y';
 endfunction
