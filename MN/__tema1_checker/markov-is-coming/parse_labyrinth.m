@@ -10,4 +10,6 @@ function [Labyrinth] = parse_labyrinth(file_path)
   m = fscanf(fid, '%d', 1);
 
   Labyrinth = fscanf(fid, '%d', [m, n])';
+  
+  fclose(fid);
 endfunction
