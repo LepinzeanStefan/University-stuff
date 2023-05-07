@@ -1,0 +1,72 @@
+	-Mentiuni: Tema este scrisa de Lepinzean Stefan, sursele de unde m-am documentat pentru aceasta tema sunt
+Octave Forge si Stack Overflow. Pentru fiecare task voi discuta succint despre metoda de rezolvare a cerintei.
+
+
+	-Task1:
+		-parse_labyrinth: O functie elementara in care am citit in primul rand marimile matricei iar apoi toata matricea.
+
+		-get_adjacency_matrix: Aceasta functie este putin mai complexa. Mai intai am creat matricea Adj care va fi o matrice
+patratica de dimensiunea n * m + 2, reprezentand numarul de celule din labirint + starile win/lose. Apoi am adaugat adiacentele
+necesare folosind functia bitand pentru a verifica care bituri sunt setate. Pentru a fi eficienta functia, am decis sa iau
+muchiile matricei drept cazuri separate, intrucat doar acolo pot exista legaturi catre win si lose.
+
+		-get_link_matrix: Aceasta functie este foarte asemanatoare cu cea precedenta, insa in loc sa ne folosim de 1 pentru a
+reprezenta legatura cu o alta celula, vom folosi 1 / leg unde leg reprezinta numarul de legaturi pe care o are celula.
+
+		-get_Jacobi_parameters: Vectorul c va retine care noduri au o iesire catre WIN iar G va fi doar matricea Link fara 
+coloanele si liniile pentru WIN si LOSE.
+
+		-perform_iterative: Algoritmul este similar cu metoda Jacobi in care dupa fiecare iteratie ne apropiem de aproximatia
+solutiei optime.
+
+		-heuristic_greedy: Algoritmul functiei este foarte similar cu pseudocodul dat in cerinta, fiind bazat pe DFS. Initializam
+path (care va fi vectorul in care retinem drumul ales) cu valoarea de start si marcam acea celula drept vizitata, apoi verificam
+exhaustiv toti vecinii elementului de la sfarsitul vectorului, incepand cu cel care are probabilitatea ce mai mare de a ajunge
+la WIN. Acest algoritm este repetat pana ajungem in starea de WIN sau epuizam drumurile posibile.
+
+		-decoded_path: In acest algoritm folosim cunostinta ca orice pozitie a unei matrice este egala cu i * coloane + j
+(unde i reprezinta linia si j coloana matricei). Stiind numarul de linii si coloane, putem calcula rapid i si j
+
+
+	-Task2:
+		-parse_data_set_file: In aceasta functie am optat sa folosesc fscanf intrucat este perfecta pentru a citi stringuri
+delimitate de spatiu, stiind marimea matricilor citesc pe rand fiecare element si il procesez. Mai intai retin primul elemnt in
+Y apoi restul pe linia i din matrice. Pentru a decide daca este string sau numar folosesc functia isprop pe modul 'digit', 
+aceasta verifica daca exista orice numar in string, caz in care il convertez cu str2num.
+
+		-parse_csv_file: Mentionez aceasta functie mai intai deoarece metodele de rezolvare sunt similare. Deoarece nu ma pot
+folosi de fscanf din cauza formatului, voi retine o singura linie in fgetl, apoi o separ folosind functia strsplit (care este 
+foarte convenabil intrucat imi intoarce un vector de celule). Nu cunoastem cate linii avem in fisier asa ca folosesc un while
+pana fgetl intoarce -1.
+
+		-prepare_for_regression: Aceasta functie compara, folosind strcmp, stringurile date si le transforma numeric conform
+cerintei, daca celula nu este string inseamna ca este garanta numar, prin urmare valoare ramane neschimbata.
+
+		-linear-regression_cost_function: Algoritmul calculeaza costul cerut, formula fiind cea a functiei de cost din cerinta.
+		
+		-gradient_descent: Calculeaza coeficientii Theta folosind metoda gradientului descendent
+		
+		-normal_equation: Este un algoritm similar cu pseudocodul oferit in cerinta. Pentru a facilita formulele folosite am 
+initializat Theta cu n elemente, urmand la finalul functiei sa il extindem si pentru Theta0. Pentru a verifica daca matricea 
+(pe care am inmultit-o cu transpusa ei) este pozitiv definita, folosesc functia chol() care aplica factorizarea Choelesky
+rezultatul nu ne intereseaza, insa functia mai poate intoarce si un termen 'p' care este 0 doar daca matricea este pozitiv
+definita. In caz contrar oprim functia si Theta ramane 0.
+
+		-lasso_regression_cost_function: Algoritmul implementeaza functia de cost folosind regularizarea Lasso, conform formulei
+din cerinta
+
+		-ridge_regression_cost_function: Algoritmul este similar cu Lasso, si urmeaza tot formula data in cerinta
+		
+	
+	-Task3:
+		-load_dataset: Aplica functia load pe fisierul cu calea path
+		
+		-split_dataset: Imparte matricea si vectorul conform cerintei. Pentru a amestaca exemplele folosesc functia randperm()
+care creeaza un vector cu valorile permutate intr-un mod aleator. Folosim acest vector pentru a alege ordinea in matrice
+
+		-initialize_weights: Functia intoarce o matrice cu elemente aleatoare din intervalul (-e, e). Pentru a putea obitne 
+aceste elemente, nu putem folosi functia randi() deoarece primeste doar intervale cu limite intregi, prin urmare vom folosi
+functia simpla rand() care are ca interval (0, 1) si o vom aplica intr-o ecuatie simpla care are rolul de extinde rezultatele
+pe intervalul ales
+
+	-Restul cerintelor nu am mai avut timp sa le fac :D

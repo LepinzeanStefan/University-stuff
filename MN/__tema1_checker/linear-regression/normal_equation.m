@@ -37,7 +37,7 @@ function [Theta] = normal_equation(FeatureMatrix, Y, tol, iter)
     r_new = r - (tk * FeatureMatrix * v);
     sk = (r_new' * r_new) / (r' * r);
     r = r_new; % Actualizam vectorul r
-    v = r + (sk * v); % Actualizam v
+    v = r + (sk * v); % Actualizam vectorul v
     k++;
   endwhile
   Theta = resize(Theta, n + 1, 1); % Extindem Theta pentru a retine si Theta 0

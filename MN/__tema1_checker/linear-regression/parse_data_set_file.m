@@ -15,7 +15,7 @@ function [Y, InitialMatrix] = parse_data_set_file(file_path)
   for i = 1 : m
     Y(i) = fscanf(fid, '%d', 1);
     for j = 1 : n
-      InitialMatrix(i, j) = fscanf(fid, '%s', 1); % Folosim fscanf pentru stringuri
+      InitialMatrix(i, j) = fscanf(fid, '%s', 1); % Folosim fscanf pentru string
       if any(isstrprop(InitialMatrix{i, j}, 'digit'))
         InitialMatrix{i, j} = str2num(InitialMatrix{i, j});
       endif

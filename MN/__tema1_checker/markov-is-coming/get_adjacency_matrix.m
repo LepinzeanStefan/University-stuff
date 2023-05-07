@@ -7,6 +7,8 @@ function [Adj] = get_Adjacency_matrix (Labyrinth)
   Adj_size = (n * m) + 2;
   % Matricea este initiata cu zero, urmand sa o completam
   Adj = zeros(Adj_size);
+  % O transformam in matrice rara
+  Adj = sparse(Adj);
   Adj(Adj_size - 1, Adj_size - 1) = 1;
   Adj(Adj_size, Adj_size) = 1;
   
@@ -116,7 +118,5 @@ function [Adj] = get_Adjacency_matrix (Labyrinth)
       
     endfor
   endfor
-  % O transformam in matrice rara
-  Adj = sparse(Adj);
 
 endfunction

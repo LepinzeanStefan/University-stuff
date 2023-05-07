@@ -3,5 +3,5 @@ function [X, y] = load_dataset(path)
   
   % X, y -> the training examples (X) and their corresponding labels (y)
   
-  % TODO: load_dataset implementation
+  load(path);
 endfunction

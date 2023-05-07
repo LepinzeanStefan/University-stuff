@@ -20,7 +20,7 @@ function [Theta] = gradient_descent(FeatureMatrix, Y, n, m, alpha, iter)
       endfor
       sum = sum / m; % Dupa ce impartim cu m, suma devine valoarea derivatei
       Theta(j + 1) = Theta(j + 1) - (alpha * sum);
-      % Nu uitam sa luam in considerare ca iteratia lui Theta incep de la 0
+      % Nu uitam sa luam in considerare ca iteratia lui Theta incepe de la 0
     endfor
   endfor
 endfunction
