@@ -1,0 +1,20 @@
+    Tema este impartita intr-un fisier principal si un header
+
+    1)  In header se afla structura de heap pe baza de coada luata dintr-un
+laborator. Este formata din functiile simple pentru manipularea unui heap.
+
+    2)  Scheletul fisierului main este luat in laboratorul 11, continand
+functiile necesare pentru a construi listele de adiacenta ale unui graf
+neorientat cu distante.
+        Pentru a rezolva primul task, am folosit functia
+algoritmului Prim pentru determinarea grafului de acoperire minim. Observam
+ca ea functioneaza pe intregul graf, chiar daca are mai multe componente conexe
+Algoritmul va creea un arbore de acoperire pentru fiecare element conex, iar 
+pentru a determina radicinile fiecarui arbore, verificam in vectorul de tati
+ce noduri au parintele -1. Odata ce este descoperita o radacina a unui arbore
+este apelata o functia care va calcula suma tuturor distantelor din  arbore,
+astfel descomperim distanta minima pentru a atinge toate nodurile.
+        In functia main, citim din fisier fiecare lant, numele nodurilor
+le retinem intr-un vector de stringuri, indexului vectorului va reprezenta
+numarul nodului respectiv, aceste lanturi, impreuna cu distanta lor le vom adauga
+in lista de adiacenta a grafului, apoi apelam functia Prim descrisa mai sus.
