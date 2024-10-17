@@ -1,0 +1,20 @@
+Starting audit...
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\CommandRunner.java:29:39: Name 'objectMapper' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\CommandRunner.java:563:40: Inner assignments should be avoided. [InnerAssignment]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\CommandRunner.java:568:42: Inner assignments should be avoided. [InnerAssignment]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\CommandRunner.java:573:40: Inner assignments should be avoided. [InnerAssignment]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\monetization\MonetizationStatistics.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\searchBar\Recommendation.java:14:17: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\searchBar\Recommendation.java:59:35: '(' is followed by whitespace. [ParenPad]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\searchBar\Recommendation.java:121: Line is longer than 100 characters (found 106). [LineLength]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\searchBar\SearchBar.java:13:40: Using the '.*' form of import should be avoided - app.searchBar.FilterUtils.*. [AvoidStarImport]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\user\Artist.java:262:33: Parameter notification should be final. [FinalParameters]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\user\GenericUser.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\user\Host.java:187:33: Parameter notification should be final. [FinalParameters]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\user\User.java:683: Line is longer than 100 characters (found 101). [LineLength]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\user\User.java:705:40: Parameter recommendationType should be final. [FinalParameters]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\app\wrapped\StatisticsWrapped.java:16:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\main\Main.java:163: Line is longer than 100 characters (found 106). [LineLength]
+[ERROR] C:\Users\stefa\Desktop\UniProjects\oop-project-2023\etapa3\.\src\main\Main.java:164: Line is longer than 100 characters (found 102). [LineLength]
+Audit done.
+Checkstyle ends with 17 errors.
